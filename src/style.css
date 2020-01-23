@@ -6,10 +6,20 @@
   border: 2px solid #000;
 }
 
-.cell {
+.cell,
+.body-cell,
+.food-cell {
   width: 30px;
   height: 30px;
   float: left;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.body-cell {
+  background-color: blue;
+}
+
+.food-cell {
+  background-color: red;
 }
