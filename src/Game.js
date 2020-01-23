@@ -31,6 +31,11 @@ class Game extends Component {
 
     const food = board[head] === FOOD || snake.length === 1;
 
+    if (snake.indexOf(head) !== -1) {
+      this.setState({ gameOver: true });
+      return;
+    }
+
     if (food) {
       const maxCells = ROWS * COLS;
       let i;
